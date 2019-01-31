@@ -1,0 +1,37 @@
+.card{
+    width: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.photo{
+    width: 120px;
+    height: 126px;
+    margin: 10px auto;
+}
+
+img{
+    width: 100%;
+}
+
+span{
+    margin-left: 30px;
+}
+.phone, .email{
+    margin-bottom: 15px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number{
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: underline;
+}
+

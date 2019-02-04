@@ -39,7 +39,7 @@ body{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    flex-basis: 440px;
+    flex-basis: 40%;
 }
 .title{
     color: #626262;
@@ -53,7 +53,7 @@ body{
     text-transform: uppercase;
 }
 .article{
-    flex-basis: 419px;
+    flex-basis: 300px;
     flex-grow: 1;
 }
 .menu__item{
@@ -77,8 +77,11 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.block-articles .article-marg:nth-child(2n+1){
-    margin: 0 55px 132px 0;
+.block-articles__article{
+    margin-bottom: 132px;
+}
+.block-articles__article:nth-child(2n+1){
+    margin-right: 60px;
 }
 .article__image{
     margin-bottom: 32px;
@@ -95,16 +98,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -10px;
 }
 .sign-block__title{
     color: #333;
     font-size: 30px;
     margin-bottom: 83px;
 }
+.form-email{
+    padding-bottom: 74px;
+}
 .input-block{
     position: relative;
-    margin-bottom: 74px;
-
 }
 .input-block__field{
     line-height: 24px;
@@ -131,14 +136,12 @@ body{
 .flex-box{
     margin-top: 103px;
 }
-.flex-box .block-articles{
-    flex-wrap: nowrap;
-}
 .load-button{
     display: block;
     border: 1px solid #626262;
     width: 164px;
     padding: 21px 34px;
+    text-align: center;
     font-size: 20px;
     margin: 30px auto 160px;
 }
@@ -178,7 +181,174 @@ body{
     width: 15px;
     height: 15px;
 }
+/******   Media quaries   ********/
+
+@media screen and (max-width: 960px) {
+    .section{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .main-photo{
+        margin: 0 -30px 70px;
+    }
+    .block-article{
+        margin-bottom: 80px;
+    }
+    .article{
+        flex-basis: auto;
+    }
+    .block-articles__article:nth-child(2n+1){
+        margin-right: 0;
+    }
+    .block-articles__article{
+        margin-bottom: 80px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .sign-block{
+        padding: 50px 65px;
+    }
+    .flex-box .block-articles{
+        flex-wrap: wrap;
+    }
+    .load-button{
+        margin-bottom: 90px;
+        margin-top: 0;
+        padding: 17px 25px;
+    }
+    .footer{
+        padding: 35px 70px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header{
+        margin: 50px 60px;
+    }
+    .menu{
+        flex-basis: 60%;
+    }
+    .section{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .main-photo{
+        margin: 0 -30px 50px;
+    }
+    .block-article__text{
+        margin-bottom: 40px;
+    }
+    .block-article{
+        margin-bottom: 60px;
+    }
+    .block-articles__article{
+        margin-bottom: 60px;
+    }
+    .form-email{
+        padding-bottom: 30px;
+    }
+    .sign-block__title{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    .load-button{
+        margin-bottom: 70px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        display: block;
+    }
+    .logo{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .menu__item{
+        margin-left: 0;
+    }
+    .main-photo {
+        margin-bottom: 30px;
+    }
+    .block-article__sec{
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .block-article__text{
+        margin-bottom: 25px;
+    }
+    .block-article{
+        margin-bottom: 35px;
+    }
+    .sign-block__title{
+        font-size: 20px;
+    }
+    .input-block__field{
+        width: 300px;
+    }
+    .flex-box{
+        margin-top: 50px;
+    }
+    .footer{
+        padding: 30px 60px;
+    }
+    .footer-terms{
+        display: flex;
+        flex-direction: column;
+    }
 
 
+}
+@media screen and (max-width: 425px) {
+    .header {
+        margin: 30px 40px;
+    }
+    .logo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .main-photo{
+        margin: 0 -15px 25px;
+    }
+    .block-article__sec {
+        margin-bottom: 15px;
+    }
+    .section{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .article__image {
+        margin-bottom: 25px;
+    }
+    .article__sec {
+        margin-bottom: 20px;
+    }
+    .block-articles__article {
+        margin-bottom: 30px;
+    }
+    .load-button {
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-terms{
+        margin-bottom: 15px;
+    }
+    .footer-terms{
+        flex-direction: row;
+    }
+    .footer__link{
+        margin-right: 30px;
+    }
+
+}
 
 

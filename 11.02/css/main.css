@@ -2,9 +2,7 @@
     border: 1px solid blue;
 }
 
-.row > div {
-    border: 1px solid yellow;
-}
+
 
 .container-fluid > .row {
     border: 1px solid red;
@@ -265,3 +263,35 @@ h1:before {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+/*****   Line    ******/
+
+.lines {
+    background-color: #95e1d3;
+}
+
+.lines-item {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    padding: 30px 15px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.lines-item:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.number {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.line-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+

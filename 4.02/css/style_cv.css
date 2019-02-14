@@ -1,51 +1,51 @@
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Tahoma, Arial, sans-serif;
 }
 
-.resume{
+.resume {
 	width: 60%;
 	margin: 0 auto;
 	border: 1px solid #777;
 	padding: 20px;
 }
 
-.resume__fullname{
+.resume__fullname {
 	text-align: center;
 	color: #0055CC;
 	font-size: 30px;
 	margin-bottom: 20px;
 }
 
-.block{
+.block {
 	margin-bottom: 20px;
 }
 
-.header{
+.header {
 	color: #0074A2;
 	font-size: 20px;
 	margin-bottom: 10px;
 }
 
-.text{
+.text {
 	font-size: 16px;
 	margin: 0 15px;
 }
 
-.block-personal__field{
+.block-personal__field {
 	margin-bottom: 10px;
 	overflow: hidden;
 }
 
-.block-personal__title{
+.block-personal__title {
 	width: 20%;
 	float: left;
 	font-size: 18px;
 }
 
-.block-personal__info{
+.block-personal__info {
  	width: 80%;
 	float: left;
 	font-size: 16px;
@@ -53,12 +53,12 @@
 	text-decoration: underline;
 }
 
-ul.list{
+ul.list {
 	list-style: none;
 	margin-left: 15px;
 }
 
-ul.list>li{
+ul.list>li {
 	margin-bottom: 5px;
 }
 

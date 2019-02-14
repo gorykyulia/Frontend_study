@@ -1,0 +1,173 @@
+.row {
+    border: 1px solid blue;
+}
+
+.row > div {
+    border: 1px solid yellow;
+}
+
+.container-fluid > .row {
+    border: 1px solid red;
+}
+
+/*****    Fonts    *******/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*****    Main styles  ******/
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Motnserrat";
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main {
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+                url(../image/eagle.jpg) no-repeat center;
+    background-size: cover;
+    padding: 36px 0 70px 0;
+}
+
+.header {
+    margin-bottom: 164px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    /*.menu-box {*/
+        /*display: none;*/
+    /*}*/
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__item:before {
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: -12px;
+    height: 3px;
+    background-color: #fce38a;
+}
+
+.menu__item:hover:before {
+    display: block;
+}
+
+.menu__item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.swiper-title {
+    font-family: "Kaushan Script";
+    font-size: 72px;
+}
+
+h1 {
+    position: relative;
+    font-size: 150px;
+    font-weight: 700;
+    margin-bottom: 124px;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    bottom: -71px;
+    left: 50%;
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    transform: translate(-50%, 0);
+}
+
+.rectangle {
+    position: relative;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.rectangle:after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 30%;
+    background-color: #f38181;
+}
+
+.rect-title {
+    font-size: 18px;
+}
+
+.rect-title span {
+    font-size: 24px;
+}
+

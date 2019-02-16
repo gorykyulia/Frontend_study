@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.full_name {
+	color: #0055CC;
+	font-size: 30px;
+}
+
+h2 {
+	color: #0074A2;
+}
+
+.text {
+	font-size: 16px;
+}
+.block {
+	margin-bottom: 20px;
+}
+
+.info {
+	font-size: 18px;
+}
+

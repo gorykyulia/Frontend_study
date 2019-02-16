@@ -252,6 +252,10 @@ h1:before {
     display: none;
 }
 
+.image:hover .block-socials {  //don't work
+    display: block;
+}
+
 .block-info {
     position: absolute;
     display: block;
@@ -506,3 +510,60 @@ h1:before {
     background-color: #f38181;
     transform: translate(0, -50%);
 }
+
+/****    What we do section   *****/
+
+.block-socials {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.block-socials a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    width: 56px;
+    height: 56px;
+    color: #f38181;
+    background-color: #fce38a;
+    border-left: rgba(243,129,129,0.5);
+}
+
+.block-socials a:hover {
+    background-color: #f38181;
+    text-decoration: none;
+    color: #fff;
+}
+
+.block-socials a:last-child {
+    border-right: rgba(243,129,129,0.5);
+}
+
+.block-socials a span:before {
+    font-size: 26px;
+}
+
+.human-info span {
+    display: block;
+    text-align: center;
+
+}
+
+.human-name {
+    padding: 31px 0 15px 0;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.human-work {
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+}
+

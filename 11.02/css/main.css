@@ -1,12 +1,11 @@
-.row {
-    border: 1px solid blue;
-}
+/*.row {*/
+/*border: 1px solid blue;*/
+/*}*/
 
 
-
-.container-fluid > .row {
-    border: 1px solid red;
-}
+/*.container-fluid > .row {*/
+/*border: 1px solid red;*/
+/*}*/
 
 /*****    Fonts    *******/
 @font-face {
@@ -46,7 +45,7 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+    src: url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
     url('../fonts/icomoon/icomoon.ttf') format('truetype'),
     url('../fonts/icomoon/icomoon.woff') format('woff'),
     url('../fonts/icomoon/icomoon.svg') format('svg');
@@ -73,6 +72,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -92,24 +92,18 @@ a:hover {
 .main {
     color: #fff;
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
-                url(../image/eagle.jpg) no-repeat center;
+    url(../image/eagle.jpg) no-repeat center;
     background-size: cover;
     padding: 36px 0 70px 0;
 }
 
 .header {
-    margin-bottom: 164px;
+    margin-bottom: 60px;
 }
 
 .logo {
     color: #fff;
     font-size: 30px;
-}
-
-@media screen and (min-width: 768px) {
-    /*.menu-box {*/
-        /*display: none;*/
-    /*}*/
 }
 
 .menu__item {
@@ -137,15 +131,92 @@ a:hover {
     text-transform: uppercase;
 }
 
-
 .swiper-title {
     font-family: "Kaushan Script";
-    font-size: 72px;
+    font-size: 30px;
+}
+
+@media (min-width: 1500px) {
+    .swiper h1 {
+        font-size: 150px;
+    }
+
+    .swiper-title {
+        font-size: 72px;
+    }
+
+    .header {
+        margin-bottom: 164px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .swiper h1 {
+        font-size: 130px;
+    }
+
+    .swiper-title {
+        font-size: 60px;
+    }
+    .header {
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .swiper h1 {
+        font-size: 98px;
+    }
+
+    .swiper-title {
+        font-size: 45px;
+    }
+    .header {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 60px 0 90px 0;
+    }
+
+    .swiper h1 {
+        font-size: 85px;
+    }
+
+    .swiper-title {
+        font-size: 35px;
+    }
+    .header {
+        margin-bottom: 80px;
+    }
+    .rect-title span {
+        display: inline;
+    }
+    .learn-link {
+        font-size: 14px;
+    }
+    .rect-title {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .swiper h1 {
+        font-size: 70px;
+    }
+
+    .swiper-title {
+        font-size: 30px;
+    }
 }
 
 h1 {
     position: relative;
-    font-size: 150px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 124px;
 }
@@ -168,6 +239,10 @@ h1:before {
     margin-bottom: 25px;
 }
 
+.rect-title span {
+    display: none;
+}
+
 .rectangle:after {
     content: "";
     height: 3px;
@@ -177,15 +252,14 @@ h1:before {
 }
 
 .rect-title {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .rect-title span {
     font-size: 24px;
 }
 
-        /*****    What we do section    *****/
-
+/*****    Who we are    *****/
 
 .aim {
     color: #333333;
@@ -207,19 +281,23 @@ h1:before {
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 
 }
 
 .section {
-    padding: 91px 0 120px 0;
+    padding: 30px 0 60px 0;
 }
 
 .text {
     color: #999999;
     font-family: Roboto;
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
     font-size: 15px;
 }
 
@@ -248,17 +326,18 @@ h1:before {
     display: block;
 }
 
-.image:hover .block-info {  //don't work
-    display: none;
+.image:hover + .block-info {
+    display: block;
 }
 
-.image:hover .block-socials {  //don't work
-    display: block;
+.image:hover + .block-socials {
+    display: flex;
 }
 
 .block-info {
     position: absolute;
-    display: block;
+    pointer-events: none;
+    display: none;
     top: 50%;
     left: 50%;
     text-align: center;
@@ -285,21 +364,13 @@ h1:before {
 }
 
 .lines-item {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    padding: 30px 15px;
+    padding: 10px 5px;
     text-align: center;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 
-.lines-item:last-child {
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .number {
-    font-size: 72px;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -307,6 +378,37 @@ h1:before {
 .line-text {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+@media (min-width: 1500px) {
+    .lines-item {
+        padding: 30px 15px;
+    }
+    .number {
+        font-size: 72px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) {
+    .lines-item:last-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .lines-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media (min-width: 576px) {
+
 }
 
 /****     We work with block   ***/
@@ -336,7 +438,7 @@ h1:before {
     line-height: 24px;
 }
 
-.outline{
+.outline {
     border: 1px solid #e5e5e5;
 }
 
@@ -344,19 +446,10 @@ h1:before {
 
 .all-devices {
     position: relative;
-    background: url("../image/background2.jpg") no-repeat center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url("../image/background2.jpg") no-repeat center;
     background-size: cover;
     max-height: 850px;
-}
-
-.all-devices:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.85);
 }
 
 .all-devices-image {
@@ -376,6 +469,11 @@ h1:before {
 }
 
 /*****   Service section   ******/
+
+.my-accordion .collapsed img {
+    transform: rotate(180deg);
+}
+
 .card-header {
     position: relative;
 }
@@ -461,7 +559,7 @@ h1:before {
     height: 22px;
 }
 
-.slider .icon-arrow_right{
+.slider .icon-arrow_right {
     right: 10px;
 }
 
@@ -519,7 +617,6 @@ h1:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .block-socials a {
@@ -530,7 +627,7 @@ h1:before {
     height: 56px;
     color: #f38181;
     background-color: #fce38a;
-    border-left: rgba(243,129,129,0.5);
+    border-left: rgba(243, 129, 129, 0.5);
 }
 
 .block-socials a:hover {
@@ -540,7 +637,7 @@ h1:before {
 }
 
 .block-socials a:last-child {
-    border-right: rgba(243,129,129,0.5);
+    border-right: rgba(243, 129, 129, 0.5);
 }
 
 .block-socials a span:before {
@@ -567,3 +664,228 @@ h1:before {
     font-size: 15px;
 }
 
+/******   Some of our work block   ****/
+
+.img-works {
+    margin-bottom: 100px;
+}
+
+.rounded-photo {
+    min-width: 210px;
+    height: 210px;
+    margin-right: 30px;
+}
+
+/*****    Happy clients section    *******/
+
+.clients {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url("../image/mountines.png") no-repeat center;
+    background-size: cover;
+}
+
+.clients-photo {
+    min-width: 110px;
+    height: 110px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.clients .human-info span {
+    text-align: left;
+}
+
+.clients .human-work {
+    position: relative;
+}
+
+.clients .human-work:after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #f38181;
+}
+
+/******    Stories    ******/
+
+.stories-image {
+    position: relative;
+}
+
+.data {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    width: 60px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-family: "Roboto";
+    line-height: 1;
+    font-size: 15px;
+}
+
+.day {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.month {
+    font-style: italic;
+}
+
+.statistics span[class^=icon] {
+    color: #95e1d3;
+    font-size: 12px;
+}
+
+.numbers {
+    font-size: 15px;
+    font-family: "Roboto";
+    font-style: italic;
+    color: #999;
+}
+
+/********   Map ******/
+
+.map {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url("../image/map.png") no-repeat center;
+    background-size: cover;
+    font-size: 26px;
+    background-color: #f38181;
+    padding: 57px 50px 81px 50px;
+    color: #f38181;
+}
+
+.map span {
+    margin-bottom: 20px;
+}
+
+.map-text {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.map-text:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    transform: translate(-50%, 0);
+}
+
+/****    Contact information   ****/
+
+.contact-info {
+    padding: 74px 0 0 0;
+    background-color: #f8f8f8;
+}
+
+.contact-info-logo {
+    font-size: 46px;
+    color: #ccc;
+}
+
+.follow {
+    color: #333333;
+    font-size: 15px;
+    padding-bottom: 18px;
+}
+
+.follow-num {
+    font-size: 18px;
+}
+
+.socials {
+    padding: 10px 0;
+}
+
+.socials span[class^="icon-"]:before {
+    color: #95e1d3;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.follow-us {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: #999;
+    font-style: italic;
+}
+
+.subscribe input:focus {
+    border: none;
+}
+
+.subscribe input[type="email"] {
+    padding: 13px;
+    border: none;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.subscribe input[type="submit"] {
+    padding: 14px 34px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #95e1d3;
+    border: none;
+}
+
+.contact-name {
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.blog-block img {
+    width: 119px;
+    height: 79px;
+}
+
+.blog-title {
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.blog-data {
+    color: #999999;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 13px;
+}
+
+.instagram a {
+    display: block;
+    color: #333333;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*****    Footer     *****/
+
+footer {
+    padding: 22px 0;
+    background-color: #f8f8f8;
+}
+
+footer p {
+    margin-bottom: 0;
+}

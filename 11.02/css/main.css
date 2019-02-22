@@ -770,6 +770,7 @@ h1:before {
 
 .block-socials {
     position: absolute;
+    z-index: 1;
     /*display: none;*/
     display: flex;
     top: 50%;
@@ -796,15 +797,15 @@ h1:before {
     font-size: 18px;
 }
 
-.image:hover + .block-socials {
+.image:hover .block-socials {
     display: flex;
 }
 
-/*.image:hover + .block-socials a:hover {*/
-    /*background-color: #f38181;*/
-    /*text-decoration: none;*/
-    /*color: #fff;*/
-/*}*/
+.image:hover .block-socials a:hover {
+    background-color: #f38181;
+    text-decoration: none;
+    color: #fff;
+}
 
 .human-info span {
     display: block;

@@ -1,14 +1,14 @@
+/*--------HEADER------------*/
+
 .header {
   @extend %flex-row;
   @extend %flex-sb-cen;
   padding-top: 4.3%;
   padding-bottom: 3.3%;
-  border: 1px solid black;
   border-top: 10px solid $color-header-top;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-
 }
 
 .logo {

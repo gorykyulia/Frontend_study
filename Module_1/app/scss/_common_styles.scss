@@ -20,9 +20,13 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 /*----------------COMMON STYLES-------------*/
 
-.container {
+.box {
   max-width: 1000px;
   margin: 0 auto;
 }

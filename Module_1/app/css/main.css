@@ -136,6 +136,15 @@ html {
   min-height: 100%;
   font-weight: normal;
   font-style: normal; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 8px; } }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 7px; } }
+  @media screen and (max-width: 400px) {
+    html {
+      font-size: 6px; } }
 
 body {
   color: #000;
@@ -160,7 +169,7 @@ ul {
   padding-right: 20px;
   padding-left: 20px; }
 
-.header, .logo, .search-form, .navigation, .menu, .socials {
+.header, .logo, .search-form, .navigation, .menu, .socials, .slider__overlay {
   display: flex; }
 
 .header, .logo, .navigation {
@@ -322,3 +331,51 @@ ul {
   transition: background-color 0.3s ease-in; }
   .socials__item:hover {
     background-color: #ee802f; }
+
+/*-----------SLIDER---------*/
+.relation {
+  position: relative; }
+  .relation__ratio {
+    padding-top: 50%;
+    height: 0; }
+  .relation__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.slider {
+  width: 100%;
+  background-color: #333333; }
+  .slider > span {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.4rem; }
+    .slider > span:first-child {
+      margin: 20% 0 8.7%; }
+  .slider__overlay {
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    background-color: #0f0f0f; }
+  .slider__text {
+    color: #bfbfbf;
+    font-size: 13px;
+    line-height: 1.25;
+    text-align: center; }
+
+.controls {
+  text-align: center;
+  margin: 14px 0 50px; }
+  .controls__circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #cecece;
+    margin-right: 10px;
+    border-radius: 50%; }
+    .controls__circle.active {
+      border: 1px solid #353535;
+      background-color: #ffffff; }

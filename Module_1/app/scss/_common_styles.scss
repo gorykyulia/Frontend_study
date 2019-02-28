@@ -5,6 +5,15 @@ html {
   min-height: 100%;
   font-weight: normal;
   font-style: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 7px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 6px;
+  }
 }
 
 body {

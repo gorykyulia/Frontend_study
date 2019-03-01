@@ -169,10 +169,10 @@ ul {
   padding-right: 20px;
   padding-left: 20px; }
 
-.header, .logo, .search-form, .navigation, .menu, .socials, .slider__overlay {
+.header, .logo, .search-form, .navigation, .menu, .socials, .slider__overlay, .team-people {
   display: flex; }
 
-.header, .logo, .navigation {
+.header, .logo, .navigation, .team-people {
   justify-content: space-between;
   align-items: center; }
 
@@ -368,7 +368,7 @@ ul {
 
 .controls {
   text-align: center;
-  margin: 14px 0 50px; }
+  margin: 14px 0 5%; }
   .controls__circle {
     display: inline-block;
     width: 12px;
@@ -377,5 +377,59 @@ ul {
     margin-right: 10px;
     border-radius: 50%; }
     .controls__circle.active {
-      border: 1px solid #353535;
+      border: 2px solid #353535;
       background-color: #ffffff; }
+
+/*-----------TEAM---------*/
+.team {
+  text-align: center; }
+  .team__title {
+    color: #4a4a4a;
+    font-size: 3.8rem;
+    line-height: 1.5em; }
+    @media screen and (max-width: 660px) {
+      .team__title {
+        font-size: 3rem; } }
+  .team__text {
+    font-size: 2.6rem;
+    color: #999999;
+    margin-bottom: 5%; }
+    @media screen and (max-width: 660px) {
+      .team__text {
+        font-size: 1.8rem;
+        margin-bottom: 4%; } }
+  .team-people {
+    padding-bottom: 5%;
+    border-bottom: 1px solid #e8e8e8; }
+    @media screen and (max-width: 660px) {
+      .team-people {
+        flex-wrap: wrap; } }
+  .team-person {
+    margin-right: 20px;
+    font-size: 13px; }
+    @media screen and (max-width: 660px) {
+      .team-person {
+        flex-basis: 45%; }
+        .team-person:nth-child(2) {
+          margin-right: 0;
+          margin-bottom: 15px; }
+        .team-person:first-child {
+          margin-bottom: 15px; } }
+    @media screen and (max-width: 440px) {
+      .team-person {
+        flex-basis: 100%; }
+        .team-person:nth-child(3) {
+          margin-bottom: 15px; } }
+    .team-person:last-child {
+      margin-right: 0; }
+    .team-person__photo {
+      padding: 12.8% 10.6% 0;
+      margin-bottom: 24px;
+      background-color: #e2e2e2; }
+    .team-person span {
+      display: block; }
+    .team-person__name {
+      color: #999999;
+      margin-bottom: 13px; }
+    .team-person__profile {
+      color: #d54346; }

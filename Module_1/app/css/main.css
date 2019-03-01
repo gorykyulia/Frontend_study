@@ -282,29 +282,33 @@ ul {
       display: none;
       position: absolute;
       top: 50px;
-      left: 20px;
+      left: 10px;
       flex-direction: column;
       align-items: flex-start; } }
   .menu__item {
     font-size: 12px;
     padding: 0 15px;
     border-right: 1px solid #c9c9c9;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+    z-index: 1; }
     @media screen and (max-width: 840px) {
       .menu__item:hover {
         border-color: #ee802f; } }
+    .menu__item:first-child {
+      padding-left: 0; }
+      @media screen and (max-width: 840px) {
+        .menu__item:first-child {
+          padding-left: 10px; } }
+    .menu__item:last-child {
+      border-right: none;
+      padding-right: 0; }
     @media screen and (max-width: 840px) {
       .menu__item {
         border-right: none;
         border-bottom: 1px solid #c9c9c9;
-        margin-bottom: 5px;
-        padding: 0;
+        padding: 5px 10px;
         width: 100%; } }
-    .menu__item:first-child {
-      padding-left: 0; }
-    .menu__item:last-child {
-      border-right: none;
-      padding-right: 0; }
     .menu__item > a {
       display: block;
       transition: all 0.3s ease-in; }

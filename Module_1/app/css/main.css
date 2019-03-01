@@ -169,7 +169,7 @@ ul {
   padding-right: 20px;
   padding-left: 20px; }
 
-.header, .logo, .search-form, .navigation, .menu, .socials, .slider__overlay, .team-people {
+.header, .logo, .search-form, .navigation, .menu, .socials, .slider__overlay, .team-people, .work {
   display: flex; }
 
 .header, .logo, .navigation, .team-people {
@@ -433,3 +433,83 @@ ul {
       margin-bottom: 13px; }
     .team-person__profile {
       color: #d54346; }
+
+/*-----------WORK---------*/
+.work {
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  @media screen and (max-width: 800px) {
+    .work {
+      flex-wrap: wrap; } }
+  .work__title {
+    flex-basis: 29%;
+    margin-right: 43px;
+    text-align: right;
+    text-transform: uppercase; }
+    @media screen and (max-width: 800px) {
+      .work__title {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-right: 0; } }
+    .work__title h3 {
+      color: #4a4a4a;
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    .work__title span {
+      font-size: 8rem;
+      color: #d44346; }
+      @media screen and (max-width: 800px) {
+        .work__title span {
+          font-size: 6rem; } }
+      @media screen and (max-width: 500px) {
+        .work__title span {
+          font-size: 4.5rem; } }
+  .work-item {
+    flex-basis: 27.4%;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      .work-item {
+        flex-basis: 45%;
+        flex-grow: 1; } }
+    @media screen and (max-width: 500px) {
+      .work-item {
+        flex-basis: 100%; } }
+    .work-item .relation__ratio {
+      padding-top: 62%; }
+    .work-item .relation__content {
+      background-color: #353535;
+      text-align: center;
+      padding-top: 25%; }
+      .work-item .relation__content span {
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold; }
+    .work-item:nth-child(2) {
+      margin-right: 20px; }
+      @media screen and (max-width: 800px) {
+        .work-item:nth-child(2) {
+          margin-right: 0;
+          margin-bottom: 15px; } }
+    .work-item h3 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: #4a4a4a;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .work-item p {
+      font-size: 1.3rem;
+      color: #999999;
+      line-height: 1.3;
+      margin-bottom: 20px; }
+    .work-item a {
+      text-transform: uppercase;
+      font-size: 13px;
+      display: inline-block;
+      background-color: #d54346;
+      border-radius: 10px;
+      padding: 10px;
+      color: #ffffff;
+      margin-top: auto; }

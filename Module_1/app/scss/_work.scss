@@ -31,7 +31,7 @@
     span {
       font-size: 8rem;
       color: $color-work-title;
-      @media screen and (max-width: 800px){
+      @media screen and (max-width: 900px){
         font-size: 6rem;
       }
       @media screen and (max-width: 500px){
@@ -70,8 +70,7 @@
 
     &:nth-child(2) {
       margin-right: 20px;
-      @media screen and (max-width: 800px){
-        margin-right: 0;
+      @media screen and (max-width: 500px){
         margin-bottom: 15px;
       }
     }

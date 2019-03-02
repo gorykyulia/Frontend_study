@@ -396,7 +396,8 @@ ul {
     line-height: 1.5em; }
     @media screen and (max-width: 660px) {
       .team__title {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin-bottom: 10px; } }
   .team__text {
     font-size: 2.6rem;
     color: #999999;
@@ -468,7 +469,7 @@ ul {
     .work__title span {
       font-size: 8rem;
       color: #d44346; }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 900px) {
         .work__title span {
           font-size: 6rem; } }
       @media screen and (max-width: 500px) {
@@ -496,9 +497,8 @@ ul {
         font-weight: bold; }
     .work-item:nth-child(2) {
       margin-right: 20px; }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 500px) {
         .work-item:nth-child(2) {
-          margin-right: 0;
           margin-bottom: 15px; } }
     .work-item h3 {
       text-transform: uppercase;

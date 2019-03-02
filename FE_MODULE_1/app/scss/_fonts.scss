@@ -1,0 +1,37 @@
+/******    Fonts    ******/
+
+@font-face {
+  font-family: 'ArialMT';
+  src: url('../fonts/Arial_MT.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src:  url('../fonts/Georgia.woff') format('woff');
+  src:  url('../fonts/Georgia.ttf') format('truetype');
+  src:  url('../fonts/Georgia.eot') format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src:  url('../fonts/Georgia-Bold.woff') format('woff');
+  src:  url('../fonts/Georgia-Bold.ttf') format('truetype');
+  src:  url('../fonts/Georgia-Bold.eot') format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff') format('woff'),
+  url('../fonts/icomoon/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

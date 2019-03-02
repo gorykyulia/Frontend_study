@@ -1,0 +1,59 @@
+/* --------------- BASIC SETTINGS ---------*/
+
+html {
+  font-size: 10px;
+  min-height: 100%;
+  font-weight: normal;
+  font-style: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 7px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 6px;
+  }
+}
+
+body {
+  color: #000;
+  font-family: "Georgia";
+  text-align: left;
+  font-size: 1rem;
+  background-color: $color-logo-part1;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*----------------COMMON STYLES-------------*/
+
+.box {
+  margin: 0 auto;
+}
+
+.section {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+%flex-row {
+  display: flex;
+}
+
+%flex-sb-cen {
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

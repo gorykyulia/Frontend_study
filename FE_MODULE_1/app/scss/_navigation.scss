@@ -1,0 +1,105 @@
+/*-----------NAVIGATION---------*/
+
+.navigation {
+  @extend %flex-row;
+  @extend %flex-sb-cen;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $color-search-input;
+  position: relative;
+  &__checkbox {
+    display: none;
+    &:checked ~ .navigation__button {
+      color: $color-logo-part2;
+    }
+    &:checked ~ .menu {
+      display: flex;
+    }
+  }
+  &__button {
+    display: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    @media screen and (max-width: 840px) {
+      display: block;
+    }
+  }
+}
+
+.menu {
+  @extend %flex-row;
+  align-items: center;
+  @media screen and (max-width: 840px) {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    font-size: 12px;
+    padding: 0 15px;
+    border-right: 1px solid $color-menu-items-border;
+    transition: all 0.3s ease;
+    background-color: $color-logo-part1;
+    z-index: 1;
+    &:hover {
+      @media screen and (max-width: 840px) {
+        border-color: $color-social-hover;
+      }
+    }
+    &:first-child {
+      padding-left: 0;
+      @media screen and (max-width: 840px) {
+        padding-left: 10px;
+      }
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+    @media screen and (max-width: 840px) {
+      border-right: none;
+      border-bottom: 1px solid $color-menu-items-border;
+      padding: 5px 10px;
+      width: 100%;
+    }
+    & > a {
+      display: block;
+      transition: all 0.3s ease-in;
+      &:hover {
+        color: $color-social-hover;
+      }
+    }
+  }
+  &__link {
+    color: $color-logo-part2;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: $color-menu-link;
+    font-family: "Arial MT";
+    line-height: 19.2px;
+  }
+}
+
+.socials {
+  @extend %flex-row;
+  &__item {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $color-logo-part2;
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+      background-color: $color-social-hover;
+    }
+  }
+}

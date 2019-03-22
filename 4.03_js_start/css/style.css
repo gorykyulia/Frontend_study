@@ -1,0 +1,16 @@
+form {
+    margin: 0 auto;
+    background-color: #0074A2;
+    width: 30%;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}

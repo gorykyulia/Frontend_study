@@ -1,0 +1,92 @@
+/*--------HEADER------------*/
+
+.header {
+  @extend %flex-row;
+  @extend %flex-sb-cen;
+  padding-top: 4.3%;
+  padding-bottom: 3.3%;
+  border-top: 10px solid $color-header-top;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  @extend %flex-row;
+  @extend %flex-sb-cen;
+  @media screen and (max-width: 768px) {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    align-self: auto;
+  }
+  &__name {
+    margin-right: 33px;
+    @media screen and (max-width: 768px) {
+      margin-right: 10px;
+    }
+  }
+
+  &__name1, &__name2 {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  &__name1 {
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: $color-logo-part1;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: $color-logo-circle;
+  }
+
+  &__name2 {
+    color: $color-logo-part2;
+    font-size: 26px;
+    height: 44px;
+    line-height: 38px;
+    vertical-align: middle;
+  }
+
+  &__text {
+    height: 25px;
+    color: $color-logo-line;
+    font-size: 12px;
+    border-left: 1px solid $color-logo-line;
+    line-height: 25px;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
+}
+
+.search-form {
+  @extend %flex-row;
+  @media screen and (max-width: 768px) {
+    align-self: flex-end;
+  }
+  @media screen and (max-width: 500px) {
+    align-self: auto;
+  }
+  & > input[type="text"] {
+    padding: 10px 80px 10px 10px;
+    color: #7f7f7f;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid $color-search-input;
+  }
+
+  & > input[type="submit"] {
+    border: none;
+    padding: 10px;
+    color: $color-white;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: $color-logo-circle;
+  }
+}

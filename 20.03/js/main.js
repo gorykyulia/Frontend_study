@@ -9,39 +9,39 @@ function Student(studentObj, nameOfObj) {
   this.grades = studentObj.grades;
   this.nameOfObj = nameOfObj;
 
-  this.fullName = function(){
-    return this.name + " " + this.surname;
-  };
-
-  this.gradesAvarage = function(){
-    var arr = this.grades;
-    var result = arr.reduce(function(sum, current){
-      return sum + current;
-    }, 0);
-    return (result / arr.length).toFixed(2);
-  };
-
   group.push(this);
 
 }
 
-Student.prototype.group = function() {
+Student.prototype.fullName = function(){
+  return this.name + " " + this.surname;
+};
+
+Student.prototype.gradesAvarage = function(){
+  var arr = this.grades;
+  var result = arr.reduce(function(sum, current){
+    return sum + current;
+  }, 0);
+  return (result / arr.length).toFixed(2);
+};
+
+Student.group = function() {
   console.log("Список студентів: ");
   return printGroup();
 };
 
-Student.prototype.showAllStudents = function() {
+Student.showAllStudents = function() {
   console.log("Модифікований список студентів: ");
   return printModifyStudents(sortStudents(group));
 
 };
 
-Student.prototype.showBestStudent = function() {
+Student.showBestStudent = function() {
   sortStudents(group);
   return printBestStudent(group[0]);
 };
 
-Student.prototype.bestStudent = function() {
+Student.bestStudent = function() {
   sortStudents(group);
   return printNameOfObj(group[0]);
 };
@@ -81,7 +81,7 @@ var student2 = new Student ({name: 'Semen', surname: 'Semenov', grades: [3,5,5]}
 var student3 = new Student ({name: 'Petr', surname: 'Petrov', grades: [4,3,5]}, 'student3');
 
 console.log(student1);
-console.log(Student.prototype.group());
-console.log(Student.prototype.showAllStudents());
-console.log(Student.prototype.showBestStudent ());
-console.log(Student.prototype.bestStudent());
+console.log(Student.group());
+console.log(Student.showAllStudents());
+console.log(Student.showBestStudent ());
+console.log(Student.bestStudent());

@@ -1,0 +1,83 @@
+.box-app {
+    width: 600px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #33333329;
+    padding: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .buttons-box {
+      display: flex;
+  }
+
+  .btn {
+    width: 100px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .main-field {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .answer {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+
+  .example {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+  }
+
+  .check {
+    display: inline-block;
+    width: 80px;
+  }
+
+  .setting-field {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-operations {
+    margin-bottom: 20px;
+  }
+
+  .box-operations input {
+    margin-right: 20px;
+
+  }
+
+  .range {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .range input {
+    margin-bottom: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }

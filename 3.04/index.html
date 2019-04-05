@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="box-app">
+    <div class="buttons">
+      <div class="buttons-box">
+        <div class="btn" id="test">Test</div>
+        <div class="btn" id="settings">Settings</div>
+      </div>
+      <div class="btn" id="check">Check</div>
+    </div>
+
+    <div class="setting-field hide">
+      <div class="box-operations">
+        <label for="plus">+</label>
+        <input id="plus" type="checkbox" data-operation="plus" checked>
+        <label for="minus">-</label>
+        <input id="minus" type="checkbox" data-operation="minus" checked>
+        <label for="multiple">*</label>
+        <input id="multiple" type="checkbox" data-operation="multiple" checked>
+        <label for="divide">/</label>
+        <input id="divide" type="checkbox" data-operation="divide" checked>
+      </div>
+      
+      <div class="range">
+        <label for="from">Від</label>
+        <input id="from" type="text" value = 1>
+        <label for="to">До</label>
+        <input id="to" type="text" value = 20>
+        <label for="count">Кількість прикладів</label>
+        <input id="count" type="text" value = 10>
+      </div>
+      <button id="apply">Apply</button>
+      
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

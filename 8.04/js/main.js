@@ -2,20 +2,20 @@
 
 const numberOfDays = 14;
 const url = "https://api.exchangeratesapi.io/";
-const now = new Date();
-const array_of_dates = get14days(now, numberOfDays);
+const array_of_dates = getDays(numberOfDays);
 
-function get14days(date, numberOfDays) {
+function getDays(numberOfDays) {
+  const now = new Date();
   let i = 0, length = numberOfDays;
   let days = [];
 
   do {
-    if (date.getDay() !== 0 && date.getDay() != 6) {
-      days[i] = getFormatDate(date);
-      date.setDate(date.getDate() - 1);
+    if (now.getDay() !== 0 && now.getDay() != 6) {
+      days[i] = getFormatDate(now);
+      now.setDate(now.getDate() - 1);
       i++;
     } else {
-      date.setDate(date.getDate() - 1);
+      now.setDate(now.getDate() - 1);
       continue;
     }
   } while (i < length)

@@ -2,8 +2,7 @@
 
 const numberOfDays = 14;
 const url = "https://api.exchangeratesapi.io/";
-const array_of_dates = getDays(numberOfDays);
-
+const arrayOfDates = getDays(numberOfDays);
 function getDays(numberOfDays) {
   const now = new Date();
   let i = 0, length = numberOfDays;
@@ -43,7 +42,7 @@ const chartOptions = {
 
 ///////////////     Requests      //////////////////
 
-let arrayOfRequests = array_of_dates.map(date => {
+let arrayOfRequests = arrayOfDates.map(date => {
   let path = url + `${date}`;
   return fetch(path);
 });
@@ -55,7 +54,7 @@ Promise.all(arrayOfRequests)
     });
   })
   .then(response => {
-    let length = array_of_dates.length;
+    let length = arrayOfDates.length;
     let receivedAnswers = [];
     for (let i = 0; i < length; i++) {
       response[i]
@@ -74,7 +73,7 @@ Promise.all(arrayOfRequests)
 ///////////   Create and configurate charts    //////////////////////
 
 function createCharts(dateFromApi) {
-  array_of_dates.forEach((item) => labels.push(formatDate(Date.parse(item))));
+  arrayOfDates.forEach((item) => labels.push(formatDate(Date.parse(item))));
   writeAllAnswers(dateFromApi);
 
   let i,
@@ -113,7 +112,7 @@ function writeAllAnswers(receivedAnswers) {
 
 
   for (i = 0; i < length; i++) {
-    if (receivedAnswers[i].date === array_of_dates[i]) {
+    if (receivedAnswers[i].date === arrayOfDates[i]) {
       writeOneAnswer(receivedAnswers[i], true);
     } else {
       writeOneAnswer(receivedAnswers[i], false);
@@ -127,7 +126,7 @@ function writeOneAnswer(httpData, isDataCorrect) {
     if (isDataCorrect) {
       item.data.push(httpData.rates[item.label]);
     } else {
-      item.data.push(0);
+      item.data.push(undefined);
     }
 
   });

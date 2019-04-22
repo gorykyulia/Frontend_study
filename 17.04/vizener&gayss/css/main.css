@@ -1,0 +1,16 @@
+/* .field {
+    width: 50px;
+} */
+
+header {
+    background-color: #ef5350;
+}
+
+header img {
+    height: 50px;
+}
+
+#app {
+    height: 100%;
+    
+}

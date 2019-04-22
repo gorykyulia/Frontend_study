@@ -34,26 +34,96 @@ window.onload = () => {
             element.msRequestFullscreen();
         }
     }
-
-    let params = {
+        let params = {
         lines: [{
-            background: '#00F',
-            updateTime: 1000,
+            background: '#0F0',
+            updateTime: 3000,
             elements: [{
-                background: '#00F',
+                background: '#F00',
                 width: 25
             },
             {
-                background: '#00F',
+                background: '#056',
                 width: 50
             },
             {
-                background: '#00F',
+                background: '#12D',
+                width: 25
+            }
+            ]
+        },
+        {
+            background: '#0F0',
+            updateTime: 1000,
+            elements: [{
+                background: '#0FF',
+                width: 30
+            },
+            {
+                background: '#D0F',
+                width: 30
+            },
+            {
+                background: '#842',
+                width: 20
+            }
+            ]
+        },
+        {
+            background: '#222',
+            updateTime: 500,
+            elements: [{
+                background: '#0FF',
+                width: 20
+            },
+            {
+                background: '#D0F',
+                width: 20
+            },
+            {
+                background: '#842',
+                width: 30
+            }
+            ]
+        },
+        {
+            background: '#0F0',
+            updateTime: 3000,
+            elements: [{
+                background: '#0AF',
+                width: 50
+            },
+            {
+                background: '#75F',
+                width: 10
+            },
+            {
+                background: '#12F',
                 width: 25
             }
             ]
         }]
     };
+
+    // let params = {
+    //     lines: [{
+    //         background: '#00F',
+    //         updateTime: 1000,
+    //         elements: [{
+    //             background: '#00F',
+    //             width: 25
+    //         },
+    //         {
+    //             background: '#00F',
+    //             width: 50
+    //         },
+    //         {
+    //             background: '#00F',
+    //             width: 25
+    //         }
+    //         ]
+    //     }]
+    // };
 
     function initBoxLines() {
         BOX_LINES.style.display = "block";
@@ -140,4 +210,3 @@ window.onload = () => {
         return color;
     }
 };
-

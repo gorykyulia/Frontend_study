@@ -1,0 +1,22 @@
+#slider {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slider__item {
+    width: 50%;   
+}
+
+.slider__userLogin,
+.slider__userPage {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider__item img {
+    width: 100%;
+}

@@ -1,5 +1,30 @@
 <template>
   <div id="app">
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav justify-content-center">
+        <!-- <li class="nav-item">
+          <router-link class="nav-link" to="/">Home</router-link>
+    </li>-->
+    <!-- <li class="nav-item">
+          <router-link class="nav-link" to="/cars">Cars</router-link>
+    </li>-->
+    <!-- <router-link tag="li" class="nav-item" exact to="/" active-class="active">
+          <a class="nav-link">Home</a>
+        </router-link>
+        <router-link tag="li" class="nav-item" exact to="/cars" active-class="active">
+          <a class="nav-link">Cars</a>
+        </router-link>
+
+        <router-link tag="li" class="nav-item" exact to="/car/2" active-class="active">
+          <a class="nav-link">Car 2</a>
+        </router-link>
+        <router-link tag="li" class="nav-item" exact to="/car/3" active-class="active">
+          <a class="nav-link">Car 3</a>
+        </router-link>
+      </ul>
+    </div>-->
+
+    <!-- <router-view></router-view> -->
     <!-- <Validation></Validation> -->
     <button class="addBtn" @click="openDialogAdd">Add order</button>
     <ordersTable @editOrder="editOrder"></ordersTable>

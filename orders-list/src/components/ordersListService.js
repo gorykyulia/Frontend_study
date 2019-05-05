@@ -28,7 +28,7 @@ export default new Vue({
 
       for (let i = 1; ; i++) {
         if (!arrOfNumbers.includes(i)) {
-          return i;
+          return `${i}`;
         }
       }
     },
@@ -38,15 +38,14 @@ export default new Vue({
       let month = date.getMonth() + 1;
       let year = date.getFullYear();
 
-      if (day < 10) { day = `0${day}` }
-      if (month < 10) { month = `0${month}` }
+      if (day < 10) { day = `0${day} ` }
+      if (month < 10) { month = `0${month} ` }
 
       return `${day}.${month}.${year}`;
     }
   },
   methods: {
     addOrder(name, desc) {
-      console.log('service addOrder ' + name + " " + desc)
       if (name && desc) {
         const newOrder = {
           "id": this.newId,
@@ -54,7 +53,6 @@ export default new Vue({
           "createdDate": this.newDate,
           "description": desc
         }
-        console.dir({ newOrder });
         this.ordersData.push(newOrder);
       }
     },
@@ -77,8 +75,6 @@ export default new Vue({
     },
 
     saveOrder(newOrder, oldId) {
-      console.log("saveOrder" + newOrder.name + " " + oldId);
-
       if (oldId !== newOrder.id) {
         if (this.isIdInData(newOrder.id)) {
           console.log("There is an order with the same id");
@@ -88,8 +84,6 @@ export default new Vue({
       for (let i = 0; i < this.ordersData.length; i++) {
         if (this.ordersData[i].id === oldId) {
           this.ordersData.splice(i, 1, newOrder);
-          this.ordersData.forEach(item => console.dir({ item }));
-          // console.dir('newData service: '+this.ordersData);
           return;
         }
       }
@@ -99,7 +93,6 @@ export default new Vue({
       let arrayOfId = [];
       this.ordersData.forEach(order => arrayOfId.push(order.id));
       if (arrayOfId.includes(id)) {
-        console.log("isIdInData  " + arrayOfId + " " + id);
         return true;
       } else {
         return false;

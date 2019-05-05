@@ -28,7 +28,7 @@
       <button @click="saveOrder">Save</button>
       <button @click="close">Cancel</button>
     </div>
-    <p>{{order.name}}</p>
+    <p>{{order.oldId}}</p>
   </dialog>
 </template>
 
@@ -41,7 +41,7 @@ export default {
     return {
       order: {},
       oldId: String
-    };
+    }
   },
 
   created() {
@@ -51,13 +51,10 @@ export default {
   methods: {
     close() {
       this.$emit("closeDialogEdit");
-      this.clearFields();
     },
 
     editOrder(editedOrder) {
-      // Object.assign(this.order, editedOrder); //it is not works
-      console.log("assign " + this.order.name);
-      this.order = editedOrder;                 //it works
+      this.order = {...editedOrder};                
       this.oldId = editedOrder.id;
     },
 
@@ -73,5 +70,5 @@ export default {
       this.order.createdDate = "";
     }
   }
-};
+}
 </script>

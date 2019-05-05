@@ -1,0 +1,61 @@
+#orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  border: 1px solid green;
+}
+
+.table {
+  margin-top: 10px;
+  width: 100%;;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2) {
+  width: 15%;
+}
+
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+thead th:nth-child(5) {
+  width: 10%;
+}
+thead th:nth-child(6) {
+  width: 10%;
+}
+
+td, th{
+  border: solid 1px #ccc;
+  padding: 5px 10px;
+}
+
+.addBtn {
+  padding: 5px 20px;
+}
+
+dialog {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+dialog input {
+  margin-bottom: 10px;
+}
+
+.boxBtn {
+  text-align: center;
+}
+

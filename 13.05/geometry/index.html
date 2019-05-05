@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Is dot inside a triangle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="component-triangle">
+        <p>Enter coordinates of three points(tops of the triangle ABC): </p>
+        <div>
+          <span>A: </span><br>
+          x1 <input type="text" class="A" data-coord="x">
+          y1 <input type="text" class="A" data-coord="y">
+        </div>
+        <div>
+            <span>B: </span><br>
+          x2 <input type="text" class="B" data-coord="x">
+          y2 <input type="text" class="B" data-coord="y">
+        </div>
+        <div>
+            <span>C: </span><br>
+          x3 <input type="text" class="C" data-coord="x">
+          y3 <input type="text" class="C" data-coord="y">
+        </div>
+        <p>Enter coordinates of point D: </p>
+        <div>
+          x0 <input type="text" class="D" data-coord="x">
+          y0 <input type="text" class="D" data-coord="y">
+        </div>
+        <button class="checkBtn">Check</button>
+    </div>
+    
+    <script src="js/point.js"></script>
+    <script src="js/triangle-comp.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -27,5 +27,4 @@ export default new Vue({
       console.log(`Error: ${error}`);
     });
   }
-  
 });

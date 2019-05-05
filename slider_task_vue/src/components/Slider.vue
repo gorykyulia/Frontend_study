@@ -5,12 +5,12 @@
                 :userData="user"
     ></SliderItem>
   </div>
-  
 </template>
 
 <script>
+
 import SliderItem from './SliderItem.vue';
-import UsersDataService from './UsersDataService.js'
+import UsersDataService from './UsersDataService'
 
 export default {
   components: {

@@ -38,7 +38,7 @@ let Timer = (function () {
     start() {
       newTime = Date.now() + this.timeInMinutes * 60 * 1000;
 
-      timer = setInterval(this.changeTime.bind(this), 500);
+      timer = setInterval(this.changeTime.bind(this), 1000);
     }
 
     changeTime = function () {
